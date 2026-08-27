@@ -67,7 +67,7 @@ export default function Contact() {
                 scrolling="no" 
                 src={`https://maps.google.com/maps?q=${encodeURIComponent("Chinna's complex, REVA university circle, Bagalur Main Rd, Bengaluru")}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
                 className="rounded-xl"
-                title="AION Technologies Location"
+                title="AION Technology Location"
               />
             </div>
           </div>

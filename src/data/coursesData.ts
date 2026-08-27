@@ -1,39 +1,156 @@
+import { 
+  Code2, CheckCircle2, Cloud, Users, TrendingUp, Monitor, 
+  Database, Cpu, Globe, Server, Shield, Zap, Award, BookOpen, 
+  Briefcase, BarChart, FileSpreadsheet, MessageSquare, Target, Settings, Terminal, Layout, Smartphone
+} from "lucide-react";
+
 export const coursesData = [
   {
     slug: "software-testing",
     title: "Software Testing",
     category: "Testing & QA",
-    desc: "Validate and debug real applications.",
-    image: "https://images.unsplash.com/photo-1618424181497-157f25b6ce50?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Dive deep into the principles of software quality assurance. This module covers manual and automated testing methodologies, ensuring you can validate features, identify bugs, and maintain high standards for real-world applications.",
-    curriculumHighlights: ["Test Planning & Strategy", "Manual Testing Fundamentals", "Defect Life Cycle", "Agile Testing"],
-    careerOutcomes: ["QA Analyst", "Software Tester", "Test Engineer", "Quality Assurance Specialist"],
-    duration: "6 Weeks",
-    eligibility: "Open to all students; basic computer literacy recommended."
+    desc: "Ensure highest software quality.",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee57d5?q=80&w=2800&auto=format&fit=crop",
+    icon: CheckCircle2,
+    colorTheme: "purple",
+    visualType: "status-chips",
+    visualData: { label: "Pass Rate", value: "98%" },
+    heroSubtext: "Dive deep into Software Testing and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1555949963-aa79dcee57d5?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Ensure highest software quality. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Software Testing.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Software Testing Specialist", description: "Lead implementation of Software Testing across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "core-java-and-selenium",
     title: "Core Java and Selenium",
     category: "Development & Programming",
-    desc: "Master core logic and automation.",
+    desc: "Object-oriented programming and automation.",
     image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Build a solid foundation in object-oriented programming with Core Java, seamlessly integrated with Selenium WebDriver for robust automation testing. Learn how to write reliable test scripts and automate complex web applications.",
-    curriculumHighlights: ["OOP Concepts in Java", "Selenium WebDriver", "TestNG Framework", "Exception Handling"],
-    careerOutcomes: ["Automation Engineer", "Java Developer", "SDET", "QA Automation Tester"],
-    duration: "8 Weeks",
-    eligibility: "Basic programming knowledge recommended."
+    icon: Code2,
+    colorTheme: "rose",
+    visualType: "progress-dots",
+    visualData: { level: 4, max: 5 },
+    heroSubtext: "Dive deep into Core Java and Selenium and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Object-oriented programming and automation. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Core Java and Selenium.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Core Java and Selenium Specialist", description: "Lead implementation of Core Java and Selenium across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "python-selenium-mysql-python",
     title: "Python-Selenium/MySQL-Python",
     category: "Development & Programming",
-    desc: "Scripting and database integration.",
+    desc: "Python automation and database integration.",
     image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Learn Python from the ground up, utilizing its power for web automation via Selenium and data management with MySQL. This module bridges the gap between backend scripting and database administration.",
-    curriculumHighlights: ["Python Fundamentals", "Database Design & MySQL", "Selenium with Python", "Data Manipulation"],
-    careerOutcomes: ["Python Developer", "Backend Engineer", "Automation Specialist", "Data Analyst"],
-    duration: "8 Weeks",
-    eligibility: "Open to all students; basic logical reasoning required."
+    icon: Code2,
+    colorTheme: "rose",
+    visualType: "progress-dots",
+    visualData: { level: 4, max: 5 },
+    heroSubtext: "Dive deep into Python-Selenium/MySQL-Python and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Python automation and database integration. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Python-Selenium/MySQL-Python.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Python-Selenium/MySQL-Python Specialist", description: "Lead implementation of Python-Selenium/MySQL-Python across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "performance-testing",
@@ -41,23 +158,97 @@ export const coursesData = [
     category: "Testing & QA",
     desc: "Optimize application speed and reliability.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Ensure applications perform well under high load. This module covers load testing, stress testing, and performance metrics, utilizing industry-standard tools to optimize system reliability.",
-    curriculumHighlights: ["JMeter Fundamentals", "Load & Stress Testing", "Performance Bottlenecks", "Result Analysis & Reporting"],
-    careerOutcomes: ["Performance Tester", "QA Engineer", "System Analyst", "Reliability Engineer"],
-    duration: "6 Weeks",
-    eligibility: "Basic knowledge of software testing recommended."
+    icon: CheckCircle2,
+    colorTheme: "purple",
+    visualType: "status-chips",
+    visualData: { label: "Pass Rate", value: "98%" },
+    heroSubtext: "Dive deep into Performance Testing and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Optimize application speed and reliability. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Performance Testing.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Performance Testing Specialist", description: "Lead implementation of Performance Testing across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "c-c-programming",
     title: "C,C++ Programming",
     category: "Development & Programming",
-    desc: "Build foundational software engineering skills.",
-    image: "https://images.unsplash.com/photo-1627398225081-24c89544eb1a?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Establish your roots in software engineering with C and C++. Understand memory management, pointers, and object-oriented concepts that form the backbone of modern programming.",
-    curriculumHighlights: ["Syntax & Structures", "Pointers & Memory", "Object-Oriented C++", "Standard Template Library (STL)"],
-    careerOutcomes: ["Systems Programmer", "C++ Developer", "Software Engineer", "Game Developer"],
-    duration: "8 Weeks",
-    eligibility: "Open to all students; no prior programming experience required."
+    desc: "Master the foundations of computer science.",
+    image: "https://images.unsplash.com/photo-1515228699708-d144510c4c47?q=80&w=2800&auto=format&fit=crop",
+    icon: Code2,
+    colorTheme: "rose",
+    visualType: "progress-dots",
+    visualData: { level: 4, max: 5 },
+    heroSubtext: "Dive deep into C,C++ Programming and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1515228699708-d144510c4c47?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Master the foundations of computer science. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master C,C++ Programming.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "C,C++ Programming Specialist", description: "Lead implementation of C,C++ Programming across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "data-analytics",
@@ -65,71 +256,293 @@ export const coursesData = [
     category: "Data & Cloud",
     desc: "Derive insights from complex datasets.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Transform raw data into meaningful business intelligence. This module covers data wrangling, visualization, and statistical analysis to help organizations make data-driven decisions.",
-    curriculumHighlights: ["Data Wrangling", "Statistical Analysis", "Data Visualization", "Business Intelligence Tools"],
-    careerOutcomes: ["Data Analyst", "BI Analyst", "Reporting Specialist", "Data Consultant"],
-    duration: "8 Weeks",
-    eligibility: "Basic understanding of mathematics and statistics."
+    icon: Cloud,
+    colorTheme: "blue",
+    visualType: "donut",
+    visualData: { percentage: 85, label: "Efficiency" },
+    heroSubtext: "Dive deep into Data Analytics and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Derive insights from complex datasets. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Data Analytics.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Data Analytics Specialist", description: "Lead implementation of Data Analytics across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "data-science",
     title: "Data Science",
     category: "Data & Cloud",
-    desc: "Advanced modeling and machine learning.",
+    desc: "Build predictive models and algorithms.",
     image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Step into the world of predictive modeling and machine learning. Learn to build algorithms that learn from data, and deploy models that solve complex analytical problems.",
-    curriculumHighlights: ["Machine Learning Basics", "Predictive Modeling", "Python for Data Science", "Model Deployment"],
-    careerOutcomes: ["Data Scientist", "Machine Learning Engineer", "Data Analyst", "AI Researcher"],
-    duration: "10 Weeks",
-    eligibility: "Prior programming and statistical knowledge recommended."
+    icon: Cloud,
+    colorTheme: "blue",
+    visualType: "donut",
+    visualData: { percentage: 85, label: "Efficiency" },
+    heroSubtext: "Dive deep into Data Science and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Build predictive models and algorithms. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Data Science.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Data Science Specialist", description: "Lead implementation of Data Science across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "amazon-web-services",
     title: "Amazon Web Services",
     category: "Data & Cloud",
-    desc: "Deploy and manage cloud infrastructure.",
+    desc: "Design scalable cloud infrastructure.",
     image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Gain hands-on experience with the world's leading cloud platform. Learn to provision computing power, storage, and databases on AWS, building scalable and secure environments.",
-    curriculumHighlights: ["EC2 & Compute Services", "S3 & Cloud Storage", "VPC & Networking", "Identity & Access Management"],
-    careerOutcomes: ["Cloud Architect", "AWS Developer", "Cloud Support Engineer", "DevOps Engineer"],
-    duration: "8 Weeks",
-    eligibility: "Basic understanding of networking and OS concepts."
+    icon: Cloud,
+    colorTheme: "blue",
+    visualType: "donut",
+    visualData: { percentage: 85, label: "Efficiency" },
+    heroSubtext: "Dive deep into Amazon Web Services and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Design scalable cloud infrastructure. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Amazon Web Services.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Amazon Web Services Specialist", description: "Lead implementation of Amazon Web Services across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "cloud-computing",
     title: "Cloud Computing",
     category: "Data & Cloud",
-    desc: "Modernize with scalable cloud solutions.",
+    desc: "Master modern cloud architecture principles.",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Understand the fundamental concepts of cloud computing, exploring various service models (IaaS, PaaS, SaaS) and deployment strategies to modernize enterprise IT infrastructure.",
-    curriculumHighlights: ["Cloud Architecture", "Virtualization", "Security in the Cloud", "Multi-Cloud Strategies"],
-    careerOutcomes: ["Cloud Engineer", "Solutions Architect", "IT Consultant", "Systems Administrator"],
-    duration: "6 Weeks",
-    eligibility: "Open to all students; basic IT knowledge recommended."
+    icon: Cloud,
+    colorTheme: "blue",
+    visualType: "donut",
+    visualData: { percentage: 85, label: "Efficiency" },
+    heroSubtext: "Dive deep into Cloud Computing and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Master modern cloud architecture principles. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Cloud Computing.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Cloud Computing Specialist", description: "Lead implementation of Cloud Computing across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "sap",
     title: "SAP",
     category: "Data & Cloud",
-    desc: "Enterprise resource planning mastery.",
+    desc: "Enterprise resource planning and management.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Master the core modules of SAP, the world's leading Enterprise Resource Planning (ERP) software. Learn how to manage business operations and customer relations seamlessly.",
-    curriculumHighlights: ["SAP Navigation", "Financial Accounting (FI)", "Materials Management (MM)", "Sales and Distribution (SD)"],
-    careerOutcomes: ["SAP Consultant", "ERP Analyst", "Business Process Expert", "Systems Analyst"],
-    duration: "10 Weeks",
-    eligibility: "Basic understanding of business processes."
+    icon: Cloud,
+    colorTheme: "blue",
+    visualType: "donut",
+    visualData: { percentage: 85, label: "Efficiency" },
+    heroSubtext: "Dive deep into SAP and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Enterprise resource planning and management. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master SAP.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "SAP Specialist", description: "Lead implementation of SAP across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "digital-marketing",
     title: "Digital Marketing",
     category: "Business & Tools",
     desc: "Drive growth and brand awareness.",
-    image: "https://images.unsplash.com/photo-1432888117426-115f08151aff?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Navigate the digital landscape to drive brand growth. This module covers SEO, social media marketing, content strategy, and paid advertising to build a strong online presence.",
-    curriculumHighlights: ["Search Engine Optimization (SEO)", "Social Media Strategy", "Pay-Per-Click (PPC)", "Analytics & Reporting"],
-    careerOutcomes: ["Digital Marketing Executive", "SEO Specialist", "Social Media Manager", "Growth Marketer"],
-    duration: "6 Weeks",
-    eligibility: "Open to all students; strong communication skills recommended."
+    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=2800&auto=format&fit=crop",
+    icon: Briefcase,
+    colorTheme: "orange",
+    visualType: "checklist",
+    visualData: { items: ["Strategy", "Execution", "Review"] },
+    heroSubtext: "Dive deep into Digital Marketing and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Drive growth and brand awareness. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Digital Marketing.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Digital Marketing Specialist", description: "Lead implementation of Digital Marketing across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "communication-training",
@@ -137,11 +550,48 @@ export const coursesData = [
     category: "Professional Skills",
     desc: "Articulate ideas clearly and effectively.",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Master the art of clear, concise, and persuasive communication. This module focuses on both written and verbal skills, essential for collaborating effectively in a corporate environment.",
-    curriculumHighlights: ["Verbal Articulation", "Business Email Etiquette", "Active Listening", "Presentation Skills"],
-    careerOutcomes: ["Corporate Communicator", "Client Relations", "Team Lead", "Management Trainee"],
-    duration: "4 Weeks",
-    eligibility: "Open to all students."
+    icon: Users,
+    colorTheme: "teal",
+    visualType: "icon-row",
+    visualData: { icons: ["MessageSquare", "Users", "Target"] },
+    heroSubtext: "Dive deep into Communication training and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Articulate ideas clearly and effectively. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Communication training.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Communication training Specialist", description: "Lead implementation of Communication training across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "interview-skills",
@@ -149,11 +599,48 @@ export const coursesData = [
     category: "Professional Skills",
     desc: "Ace your technical and HR rounds.",
     image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Prepare to confidently face recruiters and hiring managers. We cover mock interviews, resume building, body language, and strategies for tackling tough behavioral questions.",
-    curriculumHighlights: ["Resume & Portfolio Building", "Mock Interviews", "Behavioral Strategies", "Salary Negotiation"],
-    careerOutcomes: ["Job Seeker", "Professional Candidate", "Graduate Role Applicant", "Management Trainee"],
-    duration: "3 Weeks",
-    eligibility: "Open to all students preparing for placements."
+    icon: Users,
+    colorTheme: "teal",
+    visualType: "icon-row",
+    visualData: { icons: ["MessageSquare", "Users", "Target"] },
+    heroSubtext: "Dive deep into Interview skills and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Ace your technical and HR rounds. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Interview skills.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Interview skills Specialist", description: "Lead implementation of Interview skills across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "soft-skills",
@@ -161,11 +648,48 @@ export const coursesData = [
     category: "Professional Skills",
     desc: "Develop teamwork and adaptability.",
     image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Enhance your interpersonal skills and emotional intelligence. This module focuses on teamwork, conflict resolution, leadership, and adapting to dynamic workplace environments.",
-    curriculumHighlights: ["Emotional Intelligence", "Conflict Resolution", "Team Collaboration", "Time Management"],
-    careerOutcomes: ["Team Player", "Future Leader", "Customer Success", "Project Coordinator"],
-    duration: "4 Weeks",
-    eligibility: "Open to all students."
+    icon: Users,
+    colorTheme: "teal",
+    visualType: "icon-row",
+    visualData: { icons: ["MessageSquare", "Users", "Target"] },
+    heroSubtext: "Dive deep into Soft skills and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Develop teamwork and adaptability. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Soft skills.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Soft skills Specialist", description: "Lead implementation of Soft skills across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "basic-computer",
@@ -173,11 +697,48 @@ export const coursesData = [
     category: "Business & Tools",
     desc: "Essential digital literacy for the workplace.",
     image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Build foundational digital literacy required for any modern job. Learn how to navigate operating systems, manage files, and utilize essential office software suites.",
-    curriculumHighlights: ["OS Navigation", "File Management", "Internet & Email", "Office Suite Basics"],
-    careerOutcomes: ["Data Entry Operator", "Office Assistant", "Administrative Staff", "Support Executive"],
-    duration: "4 Weeks",
-    eligibility: "Open to absolute beginners."
+    icon: Briefcase,
+    colorTheme: "orange",
+    visualType: "checklist",
+    visualData: { items: ["Strategy", "Execution", "Review"] },
+    heroSubtext: "Dive deep into basic Computer and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Essential digital literacy for the workplace. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master basic Computer.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "basic Computer Specialist", description: "Lead implementation of basic Computer across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "excel-advanced-excel",
@@ -185,11 +746,48 @@ export const coursesData = [
     category: "Business & Tools",
     desc: "Data manipulation and business reporting.",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Unlock the full potential of Microsoft Excel. Move from basic data entry to advanced functions like VLOOKUP, Pivot Tables, and Macros for complex business reporting.",
-    curriculumHighlights: ["Formulas & Functions", "Pivot Tables & Charts", "Data Validation", "Macros & VBA Basics"],
-    careerOutcomes: ["MIS Executive", "Financial Analyst", "Data Analyst", "Operations Executive"],
-    duration: "5 Weeks",
-    eligibility: "Basic computer knowledge required."
+    icon: Briefcase,
+    colorTheme: "orange",
+    visualType: "checklist",
+    visualData: { items: ["Strategy", "Execution", "Review"] },
+    heroSubtext: "Dive deep into Excel/Advanced Excel and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Data manipulation and business reporting. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Excel/Advanced Excel.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Excel/Advanced Excel Specialist", description: "Lead implementation of Excel/Advanced Excel across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "bpo-training",
@@ -197,23 +795,97 @@ export const coursesData = [
     category: "Business & Tools",
     desc: "Prepare for business process operations.",
     image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Get industry-ready for Business Process Outsourcing roles. Focus on customer service excellence, voice and accent training, and handling diverse client scenarios.",
-    curriculumHighlights: ["Customer Service Basics", "Voice & Accent", "Handling Escalations", "Call Center Tools"],
-    careerOutcomes: ["Customer Support Executive", "BPO Agent", "Technical Support", "Client Service Rep"],
-    duration: "4 Weeks",
-    eligibility: "Open to all students; good communication preferred."
+    icon: Briefcase,
+    colorTheme: "orange",
+    visualType: "checklist",
+    visualData: { items: ["Strategy", "Execution", "Review"] },
+    heroSubtext: "Dive deep into BPO Training and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Prepare for business process operations. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master BPO Training.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "BPO Training Specialist", description: "Lead implementation of BPO Training across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "spoken-english",
     title: "Spoken English",
     category: "Professional Skills",
     desc: "Enhance verbal fluency and confidence.",
-    image: "https://images.unsplash.com/photo-1475721028070-2051152cbce6?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Improve your spoken English fluency and grammar. This interactive module builds your confidence in public speaking, presentations, and day-to-day corporate communication.",
-    curriculumHighlights: ["Grammar Fundamentals", "Vocabulary Building", "Pronunciation", "Public Speaking"],
-    careerOutcomes: ["Confident Communicator", "Sales Executive", "Front Desk Officer", "Public Speaker"],
-    duration: "6 Weeks",
-    eligibility: "Open to all students."
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2800&auto=format&fit=crop",
+    icon: Users,
+    colorTheme: "teal",
+    visualType: "icon-row",
+    visualData: { icons: ["MessageSquare", "Users", "Target"] },
+    heroSubtext: "Dive deep into Spoken English and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Enhance verbal fluency and confidence. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Spoken English.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Spoken English Specialist", description: "Lead implementation of Spoken English across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "hr-trainings-and-internship",
@@ -221,11 +893,48 @@ export const coursesData = [
     category: "Professional Skills",
     desc: "Real-world human resources experience.",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Delve into the core functions of Human Resources. Learn about talent acquisition, employee relations, payroll, and gain practical exposure through a guided internship.",
-    curriculumHighlights: ["Talent Acquisition", "Employee Onboarding", "Performance Management", "Practical Internship"],
-    careerOutcomes: ["HR Executive", "Recruiter", "Talent Acquisition Specialist", "HR Generalist"],
-    duration: "8 Weeks",
-    eligibility: "Open to all students; business administration background preferred."
+    icon: Users,
+    colorTheme: "teal",
+    visualType: "icon-row",
+    visualData: { icons: ["MessageSquare", "Users", "Target"] },
+    heroSubtext: "Dive deep into HR Training's and Internship and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Real-world human resources experience. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master HR Training's and Internship.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "HR Training's and Internship Specialist", description: "Lead implementation of HR Training's and Internship across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
   },
   {
     slug: "projects",
@@ -233,10 +942,47 @@ export const coursesData = [
     category: "Professional Skills",
     desc: "Hands-on capstone development.",
     image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2800&auto=format&fit=crop",
-    overviewText: "Apply your learned skills to real-world capstone projects. This module is designed to simulate a workplace environment where you plan, execute, and deliver complete solutions.",
-    curriculumHighlights: ["Project Planning", "Agile Methodologies", "Execution & Delivery", "Final Presentation"],
-    careerOutcomes: ["Project Manager Trainee", "Junior Developer", "Business Analyst", "Scrum Master"],
-    duration: "6 Weeks",
-    eligibility: "Completion of prerequisite technical or business modules."
-  }
+    icon: Users,
+    colorTheme: "teal",
+    visualType: "icon-row",
+    visualData: { icons: ["MessageSquare", "Users", "Target"] },
+    heroSubtext: "Dive deep into Projects and build the hands-on skills required to excel in modern industry roles. Designed by experts, tailored for your success.",
+    heroImage: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2800&auto=format&fit=crop",
+    heroStats: [
+      { label: "Duration", value: "8 Wks" },
+      { label: "Format", value: "Live" },
+      { label: "Labs", value: "15+" }
+    ],
+    overviewParagraphs: [
+      "Hands-on capstone development. This intensive module takes you from foundational concepts to advanced practical implementation. The curriculum is constantly updated to reflect current industry demands.",
+      "Throughout the course, you will work on real-world case studies and hands-on projects, ensuring you are day-one ready for your next career move."
+    ],
+    subSkills: [
+      { name: "Fundamentals", description: "Learn the absolute basics and core concepts required to master Projects.", depthLevel: 80, coveredTopics: ["Core Syntax", "Environment Setup", "Best Practices", "Troubleshooting"] },
+      { name: "Advanced Applications", description: "Apply advanced techniques and frameworks used in production environments.", depthLevel: 95, coveredTopics: ["Performance Optimization", "Architecture", "Security", "Scale"] }
+    ],
+    timelineSteps: [
+      { title: "Introduction", description: "Initial setup and foundational theory.", duration: "Week 1-2" },
+      { title: "Deep Dive", description: "Intensive hands-on practice and labs.", duration: "Week 3-6" },
+      { title: "Capstone", description: "Real-world project execution.", duration: "Week 7-8" }
+    ],
+    tools: [
+      { name: "Industry Standard Tool", icon: Settings },
+      { name: "Analytics Dashboard", icon: BarChart }
+    ],
+    careerRoles: [
+      { title: "Projects Specialist", description: "Lead implementation of Projects across enterprise teams.", demandLevel: 90, salaryRange: "₹6L - ₹12L" },
+      { title: "Consultant", description: "Provide strategic guidance and auditing for clients.", demandLevel: 85, salaryRange: "₹8L - ₹15L" }
+    ],
+    impactStats: [
+      { label: "Hours", value: 40, suffix: "+" },
+      { label: "Projects", value: 3, suffix: "" },
+      { label: "Placement", value: 95, suffix: "%" }
+    ],
+    faqs: [
+      { question: "What are the prerequisites?", answer: "This module starts from the basics, but a general understanding of the domain is helpful. No prior advanced experience is strictly required." },
+      { question: "Is there a certificate?", answer: "Yes, upon successful completion and capstone evaluation, you will receive an industry-recognized certificate." }
+    ],
+    relatedModuleSlugs: []
+  },
 ];

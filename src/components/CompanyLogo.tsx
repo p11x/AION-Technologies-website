@@ -1,45 +1,38 @@
 import { useState } from "react";
+import { Recruiter } from "../data/companyData";
 
-export const clientDomains: Record<string, string> = {
-  "Omega Healthcare": "omegahealthcare.com",
-  "Teleperformance": "teleperformance.com",
-  "HGS": "hgs.cx",
-  "Mitsubishi": "mitsubishi.com",
-  "Fujitsu": "fujitsu.com",
-  "Convey tech labs": "conveytechlabs.com",
-  "Airtel": "airtel.in",
-  "Accenture": "accenture.com",
-  "[24]7.ai": "247.ai",
-  "ELMEASURE": "elmeasure.com",
-  "Flipkart": "flipkart.com",
-  "ELECSIS": "elecsis.com",
-  "JindalX": "jindalx.com",
-  "upGrad": "upgrad.com",
-  "TATA MOTORS": "tatamotors.com",
-  "WIPRO": "wipro.com"
-};
-
-export const CompanyLogo = ({ client, color }: { client: string, color?: string }) => {
+export const CompanyLogo = ({ clientObj, color }: { clientObj: Recruiter, color?: string }) => {
   const [error, setError] = useState(false);
-  const domain = clientDomains[client];
   const bgClass = color || "bg-slate-500";
   
-  if (!domain || error) {
+  if (error) {
     return (
-      <div className={`w-8 h-8 rounded flex items-center justify-center text-[11px] font-black text-white ${bgClass} shrink-0 shadow-inner`}>
-        {client.charAt(0)}
+      <div className={`w-14 h-14 rounded-lg flex items-center justify-center text-lg font-black text-white ${bgClass} shrink-0 shadow-inner`}>
+        {clientObj.name.charAt(0)}
+      </div>
+    );
+  }
+  
+  const content = (
+    <img 
+      src={clientObj.logoPath}
+      alt={`${clientObj.name} logo`}
+      className="w-full h-full object-contain"
+      onError={() => setError(true)}
+    />
+  );
+  
+  if (clientObj.logoBgVariant === "white-chip") {
+    return (
+      <div className="w-14 h-14 p-2 flex items-center justify-center shrink-0 rounded-lg bg-white shadow-sm border border-slate-100">
+        {content}
       </div>
     );
   }
   
   return (
-    <div className="w-8 h-8 flex items-center justify-center shrink-0 rounded overflow-hidden">
-      <img 
-        src={`https://logo.clearbit.com/${domain}`} 
-        alt={`${client} logo`}
-        className="w-full h-full object-contain"
-        onError={() => setError(true)}
-      />
+    <div className="w-14 h-14 p-2 flex items-center justify-center shrink-0 rounded-lg">
+      {content}
     </div>
   );
 };

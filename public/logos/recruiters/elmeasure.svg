@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <g transform="translate(60, 60)">
+    <circle cx="-30" cy="-30" r="6" fill="#f25f22"/>
+    <circle cx="-10" cy="-40" r="8" fill="#f89c1e"/>
+    <circle cx="15" cy="-35" r="7" fill="#7ab800"/>
+    <circle cx="35" cy="-15" r="9" fill="#00a1e0"/>
+    <circle cx="40" cy="10" r="6" fill="#313981"/>
+    <circle cx="25" cy="35" r="8" fill="#e6007e"/>
+    <circle cx="-5" cy="40" r="7" fill="#e32322"/>
+    <circle cx="-30" cy="25" r="9" fill="#f25f22"/>
+    <circle cx="-40" cy="0" r="6" fill="#f89c1e"/>
+    <circle cx="0" cy="0" r="14" fill="#00a1e0"/>
+  </g>
+  <text x="130" y="70" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="#333333" letter-spacing="2">ELMEASURE</text>
+  <text x="135" y="95" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#666666">Possibilities...Infinite</text>
+</svg>

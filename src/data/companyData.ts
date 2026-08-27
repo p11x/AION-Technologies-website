@@ -30,12 +30,12 @@ export const mainFunctions = [
   {
     id: 4,
     title: "Internship",
-    description: "Internships benefit both companies and candidates, fostering a symbiotic relationship in the job market. For recruiters, internships offer a costeffective way to identify and groom potential future employees, while candidates gain invaluable real-world experience, skill development, and networking opportunities."
+    description: "Internships provide candidates with invaluable real-world experience, skill development, and networking opportunities. They also offer recruiters a proven way to identify and groom potential future employees."
   },
   {
     id: 5,
-    title: "Industrial visit",
-    description: "The industrial visit is considered one of the most tactical methods of teaching. It provides students with an opportunity to learn practically through interaction, working methods and employment practices. It gives exposure from an academic point of view. Industrial visits are arranged by Aion technology for their respective students with an objective of providing them an opportunity to explore the different industry sectors like IT, manufacturing, services."
+    title: "Industrial Visit",
+    description: "Industrial visits provide students with hands-on exposure to practical working methods and employment practices. We arrange these visits across various sectors to bridge the gap between academic learning and real-world application."
   }
 ];
 
@@ -62,23 +62,29 @@ export const servicesOffered = [
   "Projects"
 ];
 
-export const clients = [
-  "Omega Healthcare",
-  "Teleperformance",
-  "HGS",
-  "Mitsubishi",
-  "Fujitsu",
-  "Convey tech labs",
-  "Airtel",
-  "Accenture",
-  "[24]7.ai",
-  "ELMEASURE",
-  "Flipkart",
-  "ELECSIS",
-  "JindalX",
-  "upGrad",
-  "TATA MOTORS",
-  "WIPRO"
+export interface Recruiter {
+  name: string;
+  logoPath: string;
+  logoBgVariant: "white-chip" | "dark-native";
+}
+
+export const clients: Recruiter[] = [
+  { name: "Omega Healthcare", logoPath: "/logos/recruiters/omega-healthcare.png", logoBgVariant: "white-chip" },
+  { name: "Teleperformance", logoPath: "/logos/recruiters/teleperformance.svg", logoBgVariant: "white-chip" },
+  { name: "HGS", logoPath: "/logos/recruiters/hgs.webp", logoBgVariant: "white-chip" },
+  { name: "Mitsubishi", logoPath: "/logos/recruiters/mitsubishi.svg", logoBgVariant: "white-chip" },
+  { name: "Fujitsu", logoPath: "/logos/recruiters/fujitsu.webp", logoBgVariant: "white-chip" },
+  { name: "Convey tech labs", logoPath: "/logos/recruiters/convey-tech-labs.svg", logoBgVariant: "white-chip" },
+  { name: "Airtel", logoPath: "/logos/recruiters/airtel.webp", logoBgVariant: "white-chip" },
+  { name: "Accenture", logoPath: "/logos/recruiters/accenture.svg", logoBgVariant: "white-chip" },
+  { name: "[24]7.ai", logoPath: "/logos/recruiters/247-ai.webp", logoBgVariant: "white-chip" },
+  { name: "ELMEASURE", logoPath: "/logos/recruiters/elmeasure.svg", logoBgVariant: "white-chip" },
+  { name: "Flipkart", logoPath: "/logos/recruiters/flipkart.webp", logoBgVariant: "white-chip" },
+  { name: "ELECSIS", logoPath: "/logos/recruiters/elecsis.svg", logoBgVariant: "white-chip" },
+  { name: "JindalX", logoPath: "/logos/recruiters/jindalx.svg", logoBgVariant: "white-chip" },
+  { name: "upGrad", logoPath: "/logos/recruiters/upgrad.svg", logoBgVariant: "white-chip" },
+  { name: "TATA MOTORS", logoPath: "/logos/recruiters/tata-motors.svg", logoBgVariant: "white-chip" },
+  { name: "WIPRO", logoPath: "/logos/recruiters/wipro.svg", logoBgVariant: "white-chip" }
 ];
 
 export const contactInfo = {

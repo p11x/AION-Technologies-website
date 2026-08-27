@@ -176,8 +176,8 @@ export default function Placement() {
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-              {clients.map((client, idx) => {
-                const initial = client.charAt(0);
+              {clients.map((clientObj, idx) => {
+                const initial = clientObj.name.charAt(0);
                 const colors = ['bg-blue-500', 'bg-red-500', 'bg-emerald-500', 'bg-amber-500', 'bg-purple-500', 'bg-indigo-500'];
                 const color = colors[idx % colors.length];
 
@@ -190,10 +190,8 @@ export default function Placement() {
                     transition={{ delay: (idx % 8) * 0.05 }}
                     className="flex items-center gap-3 bg-white/[0.03] border border-white/10 rounded-xl p-4 md:p-5 hover:bg-white/10 transition-colors cursor-pointer hover:border-white/20"
                   >
-                    <CompanyLogo client={client} color={color} />
-                    <span className="text-slate-300 text-xs md:text-sm font-bold tracking-wider uppercase truncate">
-                      {client}
-                    </span>
+                    <CompanyLogo clientObj={clientObj} color={color} />
+                    <span className="text-slate-300 text-xs md:text-sm font-bold tracking-wider uppercase truncate">{clientObj.name}</span>
                   </motion.div>
                 );
               })}

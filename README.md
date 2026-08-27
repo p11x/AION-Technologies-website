@@ -1,7 +1,7 @@
-# AION Technologies (AIMS) - Web Application
+# AION Technology (AIMS) - Web Application
 
 ## Overview
-This is a modern, responsive web application for **AION Technologies (P) Ltd.**, specifically representing the **AION Institute of Management Studies (AIMS)**. The platform is designed to showcase the institute's programs, admissions, faculty, placement opportunities, and research initiatives.
+This is a modern, responsive web application for **AION Technology (P) Ltd.**, specifically representing the **AION Institute of Management Studies (AIMS)**. The platform is designed to showcase the institute's programs, admissions, faculty, placement opportunities, and research initiatives.
 
 ## Tech Stack
 - **Framework:** React 19 (Vite)

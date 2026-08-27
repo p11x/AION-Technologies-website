@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Rocket } from "lucide-react";
 import { coursesData } from "../data/coursesData";
+import { CardVisualAccent } from "../components/CardVisualAccent";
 
 export default function Courses() {
   const getCategoryColor = (category: string) => {
@@ -72,7 +73,7 @@ export default function Courses() {
 
       {/* 3. CARD GRID */}
       <section className="max-w-[1400px] mx-auto px-4 pb-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {coursesData.map((course, index) => (
             <Link key={course.slug} to={`/courses/${course.slug}`} className="group flex flex-col h-full focus:outline-none">
               <motion.div 
@@ -83,11 +84,12 @@ export default function Courses() {
                 className="flex flex-col bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] group-hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] group-hover:-translate-y-1 transition-all duration-300 overflow-hidden h-full"
               >
                 {/* Visual Area (Specific Image) */}
-                <div className="h-[150px] w-full overflow-hidden relative bg-slate-900">
+                <div className="h-[200px] w-full overflow-hidden relative bg-slate-900">
                   <img 
                     src={course.image} 
                     alt={course.title} 
-                    className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
+                    className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                    referrerPolicy="no-referrer" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 pointer-events-none"></div>
                 </div>
@@ -99,6 +101,7 @@ export default function Courses() {
                   </span>
                   <h3 className="text-lg font-bold text-slate-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors">{course.title}</h3>
                   
+                  <div className="mb-4 mt-1"><CardVisualAccent type={course.visualType} data={course.visualData} colorTheme={course.colorTheme} /></div>
                   <p className="text-slate-500 text-sm leading-relaxed mb-6 flex-1">
                     {course.desc}
                   </p>

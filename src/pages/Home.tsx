@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { Building2, Users, Target, BookOpen, GraduationCap, ChevronRight, CheckCircle2, Award, Star, Sparkles, TrendingUp, Medal } from "lucide-react";
+import { Building2, Users, Target, BookOpen, GraduationCap, ChevronRight, CheckCircle2, Award, Star, Sparkles, TrendingUp, Medal, FileText, Briefcase, UserPlus, Factory } from "lucide-react";
 import { aboutUs, mainFunctions, clients } from "../data/companyData";
 import { CompanyLogo } from "../components/CompanyLogo";
 
@@ -22,7 +22,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-                AION Technologies
+                AION Technology
               </h1>
               <p className="mt-6 text-xl leading-8 text-blue-100 sm:text-2xl font-light italic">
                 {aboutUs.tagline}
@@ -47,31 +47,103 @@ export default function Home() {
       </section>
 
       {/* Main Functions Section */}
-      <section className="bg-slate-50 py-24">
+      <section className="bg-slate-50 py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-[#2a1a5e] sm:text-4xl">Main Functions of the Company</h2>
-            <p className="mt-4 text-lg text-slate-600">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-4 inline-flex items-center justify-center"
+            >
+              <span className="text-xs font-bold tracking-widest text-[#d33a69] uppercase bg-[#d33a69]/10 px-4 py-1.5 rounded-full">
+                What We Do
+              </span>
+            </motion.div>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-3xl font-bold tracking-tight text-[#2a1a5e] sm:text-4xl"
+            >
+              Main Functions of the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2a1a5e] via-[#462066] to-[#d33a69]">Company</span>
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="mt-4 text-lg text-slate-600"
+            >
               We provide a comprehensive ecosystem for career development and enterprise solutions.
-            </p>
+            </motion.p>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {mainFunctions.map((fn, idx) => (
-              <motion.div
-                key={fn.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative"
-              >
-                <div className="text-5xl font-black text-slate-100 absolute top-4 right-4">
-                  0{fn.id}.
-                </div>
-                <h3 className="text-xl font-bold text-[#2a1a5e] mb-4 relative z-10">{fn.title}</h3>
-                <p className="text-slate-600 relative z-10 leading-relaxed">{fn.description}</p>
-              </motion.div>
-            ))}
+
+          <div className="relative flex flex-col lg:flex-row gap-12 lg:gap-6 mt-16">
+            {/* Static background rail */}
+            <div className="absolute left-[31px] top-0 bottom-0 w-[2px] bg-slate-200 lg:left-0 lg:right-0 lg:top-[31px] lg:bottom-auto lg:w-full lg:h-[2px] z-0" />
+            
+            {/* Animated rail - Mobile (Vertical) */}
+            <motion.div 
+              initial={{ height: 0 }}
+              whileInView={{ height: "100%" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="absolute left-[31px] top-0 w-[2px] bg-gradient-to-b from-[#462066] via-teal-500 to-[#d33a69] z-0 lg:hidden origin-top"
+            />
+            
+            {/* Animated rail - Desktop (Horizontal) */}
+            <motion.div 
+              initial={{ width: 0 }}
+              whileInView={{ width: "100%" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="hidden lg:block absolute left-0 top-[31px] h-[2px] bg-gradient-to-r from-[#462066] via-teal-500 to-[#d33a69] z-0 origin-left"
+            />
+
+            {mainFunctions.map((fn, idx) => {
+              const functionIcons = [FileText, GraduationCap, Briefcase, UserPlus, Factory];
+              const functionColors = [
+                { bg: 'bg-purple-100', text: 'text-purple-600', accent: 'bg-purple-500' },
+                { bg: 'bg-blue-100', text: 'text-blue-600', accent: 'bg-blue-500' },
+                { bg: 'bg-teal-100', text: 'text-teal-600', accent: 'bg-teal-500' },
+                { bg: 'bg-orange-100', text: 'text-orange-600', accent: 'bg-orange-500' },
+                { bg: 'bg-pink-100', text: 'text-pink-600', accent: 'bg-pink-500' },
+              ];
+              const Icon = functionIcons[idx];
+              const color = functionColors[idx];
+
+              return (
+                <motion.div
+                  key={fn.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ delay: 0.3 + (idx * 0.15), duration: 0.5 }}
+                  className="flex flex-row lg:flex-col items-start lg:items-center relative z-10 w-full lg:flex-1 group"
+                >
+                  {/* Node Marker */}
+                  <div className={`shrink-0 w-16 h-16 rounded-2xl ${color.bg} ${color.text} flex items-center justify-center border-4 border-white shadow-sm relative z-10 group-hover:scale-110 group-hover:shadow-md transition-all duration-300`}>
+                    <Icon className="w-7 h-7" />
+                    <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-slate-900 text-white text-xs font-bold flex items-center justify-center border-2 border-white shadow-sm">
+                      {fn.id}
+                    </div>
+                  </div>
+                  
+                  {/* Spacer for responsive layout */}
+                  <div className="w-8 lg:h-8 lg:w-full shrink-0" />
+                  
+                  {/* Content Card */}
+                  <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 relative overflow-hidden group-hover:-translate-y-1 group-hover:shadow-md transition-all duration-300 w-full">
+                    {/* Top accent border (Desktop) / Left accent border (Mobile) */}
+                    <div className={`absolute top-0 left-0 w-1 h-full lg:w-full lg:h-1 ${color.accent} transition-opacity`} />
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 pr-2">{fn.title}</h3>
+                    <p className="text-sm text-slate-600 leading-relaxed">{fn.description}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -95,18 +167,18 @@ export default function Home() {
             }}
             className="flex shrink-0 items-center gap-6 pr-6 w-max"
           >
-            {[...clients, ...clients].map((client, idx) => {
+            {[...clients, ...clients].map((clientObj, idx) => {
               const colors = ['bg-blue-500', 'bg-red-500', 'bg-emerald-500', 'bg-amber-500', 'bg-purple-500', 'bg-indigo-500'];
               const color = colors[idx % colors.length];
 
               return (
                 <div 
                   key={idx}
-                  className="flex items-center gap-4 bg-slate-50/50 border border-slate-100 rounded-2xl p-4 md:p-5 shadow-sm min-w-[200px] md:min-w-[240px] hover:shadow-md transition-shadow cursor-default"
+                  className="flex items-center gap-4 bg-slate-50/50 border border-slate-100 rounded-2xl p-4 md:p-5 shadow-sm w-64 md:w-[280px] hover:shadow-md transition-shadow cursor-default"
                 >
-                  <CompanyLogo client={client} color={color} />
-                  <span className="text-slate-700 text-xs md:text-sm font-bold tracking-wider uppercase truncate">
-                    {client}
+                  <CompanyLogo clientObj={clientObj} color={color} />
+                  <span className="text-slate-700 text-xs md:text-sm font-bold tracking-wider uppercase text-left whitespace-normal break-words leading-tight">
+                    {clientObj.name}
                   </span>
                 </div>
               );
@@ -181,17 +253,17 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="group relative bg-[#131b2f] rounded-2xl p-8 border border-blue-500/50 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+              className="group relative bg-[#131b2f] rounded-2xl p-8 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
             >
-               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <div className="w-12 h-12 rounded-xl border border-blue-500/50 flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-xl border border-blue-500/30 flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform duration-300">
                   <Sparkles className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Excellence in Infrastructure</h3>
                 <p className="text-sm text-slate-400 font-medium">Campus Design Review</p>
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 transform scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </motion.div>
 
             {/* Card 3 */}

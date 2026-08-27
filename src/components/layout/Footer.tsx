@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src="/aion-brand-v2.png" alt="AION Technologies Logo" className="h-8 w-auto object-contain" />
-              <h3 className="text-lg font-bold text-white">AION Technologies</h3>
+              <img src="/aion-brand-v2.png" alt="AION Technology Logo" className="h-8 w-auto object-contain" />
+              <h3 className="text-lg font-bold text-white">AION Technology</h3>
             </div>
             <p className="text-sm">
               Training, Placements, and Software.
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-sm flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} AION Technologies. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AION Technology. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex gap-4">
              <a href={`https://${contactInfo.website}`} className="hover:text-[#d33a69] transition-colors">{contactInfo.website}</a>
           </div>

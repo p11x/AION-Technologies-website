@@ -24,8 +24,8 @@ export default function Navbar() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2">
             <Link to="/" className="flex items-center space-x-3">
-              <img src="/aion-brand-v2.png" alt="AION Technologies Logo" className="h-10 w-auto object-contain" />
-              <span className="text-2xl font-bold text-[#2a1a5e]">AION Technologies</span>
+              <img src="/aion-brand-v2.png" alt="AION Technology Logo" className="h-10 w-auto object-contain" />
+              <span className="text-2xl font-bold text-[#2a1a5e]">AION Technology</span>
             </Link>
           </div>
 

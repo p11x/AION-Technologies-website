@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 80" width="350" height="80">
+  <g transform="translate(10, 15)">
+    <!-- TP overlapping square mark -->
+    <rect x="10" y="5" width="25" height="25" fill="#e4007c" rx="2" />
+    <rect x="25" y="15" width="25" height="25" fill="#4d148c" rx="2" fill-opacity="0.9" />
+  </g>
+  <text x="80" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333333" letter-spacing="1">Teleperformance</text>
+</svg>
