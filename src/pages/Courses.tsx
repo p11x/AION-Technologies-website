@@ -73,9 +73,10 @@ export default function Courses() {
 
       {/* 3. CARD GRID */}
       <section className="max-w-[1400px] mx-auto px-4 pb-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {coursesData.map((course, index) => (
-            <Link key={course.slug} to={`/courses/${course.slug}`} className="group flex flex-col h-full focus:outline-none">
+            <div key={course.slug} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 flex flex-col">
+              <Link to={`/courses/${course.slug}`} className="group flex flex-col h-full focus:outline-none w-full">
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -112,7 +113,8 @@ export default function Courses() {
                   </div>
                 </div>
               </motion.div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </section>

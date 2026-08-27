@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { Building2, Users, Target, BookOpen, GraduationCap, ChevronRight, CheckCircle2, Award, Star, Sparkles, TrendingUp, Medal, FileText, Briefcase, UserPlus, Factory } from "lucide-react";
+import { Building2, Users, Target, BookOpen, GraduationCap, ChevronRight, CheckCircle2, Award, Star, Sparkles, TrendingUp, Medal, FileText, Briefcase, UserPlus, Factory, ArrowRight } from "lucide-react";
 import { aboutUs, mainFunctions, clients } from "../data/companyData";
 import { CompanyLogo } from "../components/CompanyLogo";
 
@@ -8,40 +8,57 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#2a1a5e] py-24 sm:py-32 lg:pb-40">
+      <section className="relative flex flex-col justify-center min-h-[100vh] sm:min-h-[110vh] overflow-hidden bg-[#2a1a5e] pt-24 pb-32">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a5e] via-[#462066] to-[#d33a69] opacity-90" />
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=3270&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-30" />
         </div>
         
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
           <div className="mx-auto max-w-4xl text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/20 border border-white/10 backdrop-blur-sm mb-8">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span className="text-sm font-medium tracking-wide text-white/90">Empowering Future Tech Talent</span>
+              </div>
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
                 AION Technology
               </h1>
               <p className="mt-6 text-xl leading-8 text-blue-100 sm:text-2xl font-light italic">
                 {aboutUs.tagline}
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-x-6">
                 <Link
                   to="/services"
-                  className="rounded-full bg-gradient-to-r from-[#f9a826] to-[#d33a69] px-8 py-4 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all transform hover:-translate-y-1"
+                  className="group flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#f9a826] to-[#d33a69] px-8 py-4 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all transform hover:-translate-y-1 w-full sm:w-auto"
                 >
                   Explore Services
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   to="/registration"
-                  className="rounded-full bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/20 border border-white/20"
+                  className="rounded-full bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/20 border border-white/20 w-full sm:w-auto"
                 >
                   Register Now
                 </Link>
               </div>
             </motion.div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 hidden sm:flex">
+          <span className="text-[10px] font-bold tracking-[0.2em] text-white/50 uppercase">Scroll</span>
+          <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center p-1">
+            <motion.div
+              animate={{ y: [0, 12, 0], opacity: [1, 0.5, 1] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+              className="w-1.5 h-1.5 bg-white rounded-full"
+            />
           </div>
         </div>
       </section>
