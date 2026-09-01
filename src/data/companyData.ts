@@ -89,7 +89,7 @@ export const clients: Recruiter[] = [
 
 export const contactInfo = {
   address: "Chinna's complex, REVA university circle, Bagalur Main Rd, above Jockey Exclusive Store, Niranthara Layout, Kattigenahalli, Bengaluru, Sathanur, Karnataka 560063",
-  email: "hr@aiontechnology.in",
+  email: "hr.aiontechnology@gmail.com",
   website: "www.aiontechnology.in",
-  phones: ["9606887405", "9353992306", "9353829961"]
+  phones: ["9353992306"]
 };

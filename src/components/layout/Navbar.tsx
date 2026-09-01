@@ -7,6 +7,7 @@ import { SearchModal } from "../SearchModal";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
+  { name: "Training", path: "/training" },
   { name: "Courses", path: "/courses" },
   { name: "Placements", path: "/placement" },
   { name: "Register", path: "/registration" },

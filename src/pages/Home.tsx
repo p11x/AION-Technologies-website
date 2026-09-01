@@ -36,7 +36,7 @@ export default function Home() {
                   to="/services"
                   className="group flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#f9a826] to-[#d33a69] px-8 py-4 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all transform hover:-translate-y-1 w-full sm:w-auto"
                 >
-                  Explore Services
+                  Explore Training
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
@@ -84,7 +84,7 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="text-3xl font-bold tracking-tight text-[#2a1a5e] sm:text-4xl"
             >
-              Main Functions of the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2a1a5e] via-[#462066] to-[#d33a69]">Company</span>
+              Core Business Functions of our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2a1a5e] via-[#462066] to-[#d33a69]">Company</span>
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

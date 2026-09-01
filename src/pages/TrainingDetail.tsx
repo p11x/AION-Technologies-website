@@ -4,14 +4,14 @@ import { servicesData } from "../data/servicesData";
 import { coursesData } from "../data/coursesData";
 import { DetailTemplate } from "../components/DetailTemplate";
 
-export default function ServiceDetail() {
+export default function TrainingDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const service = servicesData.find(s => s.slug === slug);
   
   useEffect(() => {
     if (!service) {
-      navigate('/services', { replace: true });
+      navigate('/training', { replace: true });
     }
   }, [service, navigate]);
   
@@ -21,5 +21,5 @@ export default function ServiceDetail() {
     service.relatedModuleSlugs?.includes(course.slug)
   );
 
-  return <DetailTemplate item={service} relatedCourses={relatedCourses} backLink="/services" backText="Back to Services" />;
+  return <DetailTemplate item={service} relatedCourses={relatedCourses} backLink="/training" backText="Back to Training" />;
 }
