@@ -25,12 +25,27 @@ export default function Home() {
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span className="text-sm font-medium tracking-wide text-white/90">Empowering Future Tech Talent</span>
               </div>
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-                AION Technology
-              </h1>
-              <p className="mt-6 text-xl leading-8 text-blue-100 sm:text-2xl font-light italic">
-                {aboutUs.tagline}
-              </p>
+              <div className="flex flex-col items-center justify-center">
+                <img src="/aion-brand-v2.png" alt="AION Logo" className="h-24 sm:h-32 lg:h-40 w-auto object-contain mb-6" />
+                <h1 
+                  className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-wide text-white leading-none"
+                  style={{ fontFamily: '"Times New Roman", Times, serif' }}
+                >
+                  Aion Technology
+                </h1>
+                <p 
+                  className="mt-4 sm:mt-5 text-xl sm:text-3xl lg:text-4xl text-slate-300 leading-tight"
+                  style={{ fontFamily: '"Times New Roman", Times, serif' }}
+                >
+                  Success has no Destiny
+                </p>
+                <p 
+                  className="mt-3 sm:mt-4 text-2xl sm:text-4xl lg:text-5xl font-medium text-white leading-tight"
+                  style={{ fontFamily: '"Times New Roman", Times, serif' }}
+                >
+                  Training, Placements And Software.
+                </p>
+              </div>
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-x-6">
                 <Link
                   to="/services"

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { contactInfo } from "../../data/companyData";
+import { Logo } from "../Logo";
 
 export default function Footer() {
   return (
@@ -7,15 +8,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img src="/aion-brand-v2.png" alt="AION Technology Logo" className="h-8 w-auto object-contain" />
-              <h3 className="text-lg font-bold text-white">AION Technology</h3>
+            <div className="inline-block bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10">
+              <Logo isDarkTheme={true} imageHeight="h-10" />
             </div>
-            <p className="text-sm">
-              Training, Placements, and Software.
-              <br/><br/>
-              "Success has no destiny"
-            </p>
           </div>
           <div>
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">Quick Links</h4>
